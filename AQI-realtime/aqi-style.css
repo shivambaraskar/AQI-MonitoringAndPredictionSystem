@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=DM+Sans&family=Foldit:wght@600&family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color-scheme: dark;
+}
+header{
+    height: 60px;
+    color: aliceblue;
+    background-color: #1A1A1D;
+}
+.nav-elements{ 
+    margin: 10px 10px;
+    width: 40px;
+    height: 40px;
+    float: right;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.nav-elements img{
+    margin-top: 5px;
+    margin-left: 2px;
+    height: 30px;
+    width: 30px;
+    filter: invert(100%);
+}
+#setting:hover{
+    transform: rotate(16deg);
+    transition-duration: .2s;
+}
+#menu{
+    margin-right: 14px;
+    background:url(icon/menu.png);
+    filter: invert(100%);
+    background-size: cover;
+    transition: background, .02s;
+}
+#menu:active{
+    background:url(icon/cross.png);
+}
+#name.nav-elements{
+    float: left;
+    color: azure;
+    padding-top: 2px;
+    margin-left: 16px;
+    font-size: small;
+    font-family: 'Bruno Ace SC', cursive;
+    background-color: #1A1A1D;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#location{
+    margin-top: 15px;
+    color: azure;
+    font-size: medium;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: lato;
+    width: 180px;
+    height: 30px;
+    background-color: #313135;
+    border: 2px solid azure;
+}
+#nav-menu{
+    right: 0%;
+    padding: 70px;
+    position: absolute;
+    background-color: black;
+}
+#nav-menu ul{
+    list-style: none;
+    line-height: 50px;
+}
+#nav-menu ul li:hover{
+    color: #000;
+    background-color: azure;
+}
+ul a{
+    text-decoration: none;
+    color: azure;
+}
+ul a:hover{
+    font-weight: 800;
+    color: #000;
+}
+ul pre{
+    font-family: lato;
+}
+ul h3, footer h3{
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: medium;
+    font-family: 'Bruno Ace SC', cursive;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#weatherbox{
+    width: 100%;
+    height: 150px;
+    background: palevioletred;
+}
+#aqibox{
+    width: 100%;
+    height: 200px;
+    background: rgb(112, 178, 216);
+}
+#gas-details{
+    width: 100%;
+    height: 300px;
+}
+#gas-details>div{
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    box-sizing: border-box;
+}
+#gas-rt{
+    background: #46188b;
+} 
+#gas-det{
+    background: #90b90a;
+}
+#ml-predict{
+    background: #0ab91b;
+}
+footer{
+    height: 150px;
+    position: relative;
+    background: #000;
+    -webkit-user-select: none;
+    user-select: none;
+}
+footer h3{
+    margin-left: 0px;
+    position: absolute;
+    padding: 20px;
+    font-size: xx-large;
+}
+.foot-contact{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+    margin-top: 90px;
+    margin-left: 30px;
+}
+.foot-contact img{
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+.foot-contact img:hover{
+    transform: scale(1.2);
+    transition-duration: .4s;
+}
+#mailbox{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    margin-left: 50%;
+    width: 30%;
+    height: 30%;
+    background: azure;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+#mailbox a{
+    color: #000;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
+    border-right: 2px solid orange;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    animation:
+      typing 4s steps(26) infinite,
+      blink-caret 0.6s step-end infinite;
+  }
+  footer>a,footer>p{
+    color: azure;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: smaller;
+    float: right;
+    margin-right: 30px;
+    margin-top: 120px;
+  }
+    
+@keyframes typing {
+    from { width: 0px }
+    to { width: calc(156px) }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange;}
+}
